@@ -4,7 +4,7 @@
  Put your stock values and see how much money have you made or lost!
 
  <p align="center">
-  <a href="https://ri2qgu.csb.app/">
+  <a href="https://mark15-profit-loss.netlify.app/">
     <img src="/profit_loss.PNG" height="300px">
   </a>
 </p>
