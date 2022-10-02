@@ -32,12 +32,14 @@ function calcProfitAndLoss(buyingPrice, numOfStocks, currentPrice) {
     //Profit
     var profit = (currentPrice - buyingPrice) * numOfStocks; 
     var profiPercent = ((profit/(buyingPrice*numOfStocks))*100).toFixed(2);
+       document.body.style.backgroundColor = "#3A2A8A";
 
 
   showOutput(`Yay bruh 🥂, you made a profit of ${profit} and that is ${profiPercent}% gain`);
 
   } else {
     //Breakeven
+       document.body.style.backgroundColor = "#3A2A8A";
   showOutput("No profit, No Loss - You gotta wait");
   }
 }
