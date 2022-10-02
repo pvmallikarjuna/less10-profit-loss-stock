@@ -48,4 +48,4 @@ function showOutput(msg){
     outputBox.innerHTML = msg;
 }
 
-calcProfitAndLoss(10,3,30);
+
