@@ -20,13 +20,19 @@ function calcProfitAndLoss(buyingPrice, numOfStocks, currentPrice) {
   if (buyingPrice > currentPrice) {
     var loss = (buyingPrice - currentPrice) * numOfStocks;
     var lossPercent = (loss/(buyingPrice*numOfStocks))*100;
+    if(lossPercent>50){
+      document.body.style.backgroundColor = "red";
+    }else{
+      document.body.style.backgroundColor = "#3A2A8A";
+    }
 
   showOutput(`Sorry bruh 😪, you lost ${loss} and the Loss percentage is ${lossPercent}%`);
  
   } else if (buyingPrice < currentPrice) {
     //Profit
     var profit = (currentPrice - buyingPrice) * numOfStocks; 
-    var profiPercent = (profit/(buyingPrice*numOfStocks))*100;
+    var profiPercent = ((profit/(buyingPrice*numOfStocks))*100).toFixed(2);
+
 
   showOutput(`Yay bruh 🥂, you made a profit of ${profit} and that is ${profiPercent}% gain`);
 
