@@ -21,7 +21,7 @@ function calcProfitAndLoss(buyingPrice, numOfStocks, currentPrice) {
     var loss = (buyingPrice - currentPrice) * numOfStocks;
     var lossPercent = ((loss/(buyingPrice*numOfStocks))*100).toFixed(2);
     if(lossPercent>50){
-      document.body.style.backgroundColor = "red";
+      document.body.style.backgroundColor = "#910505";
     }else{
       document.body.style.backgroundColor = "#3A2A8A";
     }
