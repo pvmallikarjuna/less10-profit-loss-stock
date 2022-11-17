@@ -10,7 +10,7 @@ font-family: 'Inter', sans-serif;
 
 main{
     display: flex;
-     flex-direction: column;
+    
 }
 
 label{
