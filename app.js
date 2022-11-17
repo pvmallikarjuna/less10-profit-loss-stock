@@ -6,6 +6,22 @@ const submitButton = document.querySelector("#submit-btn");
 const outputBox = document.querySelector("#output-box");
 
 submitButton.addEventListener('click',submitHandler);
+buyingPrice.addEventListener('change',(e)=>initialPrice(e));
+numOfStocks.addEventListener('change',(e)=>stockQuantity(e));
+
+const initialPrice = (e)=>{
+  let val = e.target.value;
+  if(val <= 0){
+    showOutput(`Please enter a positive value greater than 0`);
+  } 
+}
+
+const stockQuantity = (e)=>{
+  let val = e.target.value;
+  if(val <= 0){
+    showOutput(`Please enter a positive value greater than 0`)
+  }
+}
 
 function submitHandler(){
     var bp = Number(buyingPrice.value);
